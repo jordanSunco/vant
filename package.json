@@ -1,6 +1,6 @@
 {
   "name": "dvant",
-  "version": "0.12.12",
+  "version": "0.12.20",
   "description": "A Vue.js 2.0 Mobile UI at dawnwin modified from Youzan",
   "main": "lib/dvant.js",
   "style": "lib/dvant-css/index.css",
