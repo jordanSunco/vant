@@ -1,9 +1,9 @@
 {
-  "name": "vant",
-  "version": "0.12.11",
-  "description": "A Vue.js 2.0 Mobile UI at YouZan",
-  "main": "lib/vant.js",
-  "style": "lib/vant-css/index.css",
+  "name": "dvant",
+  "version": "0.12.12",
+  "description": "A Vue.js 2.0 Mobile UI at dawnwin modified from Youzan",
+  "main": "lib/dvant.js",
+  "style": "lib/dvant-css/index.css",
   "unpkg": "lib/index.js",
   "typings": "types/index.d.ts",
   "files": [
@@ -16,8 +16,8 @@
     "dev": "npm run build:file && webpack-dev-server --inline --config build/webpack.config.dev.js --content-base ./",
     "build:file": "node build/bin/build-entry.js",
     "build:components": "node build/bin/build-components.js --color",
-    "build:vant-css": "gulp build --gulpfile packages/vant-css/gulpfile.js --color",
-    "build:vant": "cross-env NODE_ENV=production webpack --progress --hide-modules --color --config build/webpack.build.js && cross-env NODE_ENV=production webpack -p --progress --hide-modules --color --config build/webpack.build.js",
+    "build:dvant-css": "gulp build --gulpfile packages/vant-css/gulpfile.js --color",
+    "build:dvant": "cross-env NODE_ENV=production webpack --progress --hide-modules --color --config build/webpack.build.js && cross-env NODE_ENV=production webpack -p --progress --hide-modules --color --config build/webpack.build.js",
     "build:style-entry": "cross-env VUE_ENV=server node build/bin/build-style-entry.js",
     "build:changelog": "sh build/bin/build-changelog.sh",
     "deploy": "npm run deploy:docs && npm run deploy:cdn && gh-pages -d docs/dist --remote youzan && rimraf docs/dist",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:youzan/vant.git"
+    "url": "git@github.com:jordanSunco/vant.git"
   },
   "keywords": [
     "youzan",
