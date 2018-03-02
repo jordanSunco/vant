@@ -33,7 +33,7 @@ export default create({
   props: {
     tip: String,
     type: Number,
-    currency:String,
+    currency: String,
     price: Number,
     label: String,
     loading: Boolean,
