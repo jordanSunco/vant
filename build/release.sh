@@ -1,6 +1,3 @@
-git checkout master
-git merge dev
-
 #!/usr/bin/env sh
 set -e
 echo "Enter release version: "
@@ -17,7 +14,7 @@ then
 
   # publish dvant-css
   echo "Releasing dvant-css $VERSION ..."
-  cd packages/vant-css
+  cd packages/dvant-css
   npm version $VERSION --message "[release] $VERSION"
   npm publish
   cd ../..
@@ -28,11 +25,11 @@ then
   npm version $VERSION --message "[release] $VERSION"
 
   # publish
-  git push origin master
-  git push origin refs/tags/v$VERSION
-  git checkout dev
-  git rebase master
-  git push origin dev
+  # git push origin master
+  # git push origin refs/tags/v$VERSION
+  # git checkout dev
+  # git rebase master
+  # git push origin dev
 
   npm publish
 fi
