@@ -26,6 +26,7 @@ export default create({
   props: {
     tel: String,
     name: String,
+    address: String,
     addText: String,
     editable: {
       type: Boolean,

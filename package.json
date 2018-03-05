@@ -1,9 +1,9 @@
 {
   "name": "dvant",
-  "version": "0.12.20",
-  "description": "A Vue.js 2.0 Mobile UI at YouZan",
+  "version": "0.12.35",
+  "description": "A Vue.js 2.0 Mobile UI at dawnwin modified from Youzan",
   "main": "lib/dvant.js",
-  "style": "lib/vant-css/index.css",
+  "style": "lib/dvant-css/index.css",
   "unpkg": "lib/index.js",
   "typings": "types/index.d.ts",
   "files": [
@@ -12,12 +12,12 @@
     "types"
   ],
   "scripts": {
-    "bootstrap": "yarn || npm i && cd ./packages/vant-css/ && yarn || npm i && cd ../../",
+    "bootstrap": "yarn || npm i && cd ./packages/dvant-css/ && yarn || npm i && cd ../../",
     "dev": "npm run build:file && webpack-dev-server --inline --config build/webpack.config.dev.js --content-base ./",
     "build:file": "node build/bin/build-entry.js",
     "build:components": "node build/bin/build-components.js --color",
-    "build:vant-css": "gulp build --gulpfile packages/vant-css/gulpfile.js --color",
-    "build:vant": "cross-env NODE_ENV=production webpack --progress --hide-modules --color --config build/webpack.build.js && cross-env NODE_ENV=production webpack -p --progress --hide-modules --color --config build/webpack.build.js",
+    "build:dvant-css": "gulp build --gulpfile packages/dvant-css/gulpfile.js --color",
+    "build:dvant": "cross-env NODE_ENV=production webpack --progress --hide-modules --color --config build/webpack.build.js && cross-env NODE_ENV=production webpack -p --progress --hide-modules --color --config build/webpack.build.js",
     "build:style-entry": "cross-env VUE_ENV=server node build/bin/build-style-entry.js",
     "build:changelog": "sh build/bin/build-changelog.sh",
     "deploy": "npm run deploy:docs && npm run deploy:cdn && gh-pages -d docs/dist --remote youzan && rimraf docs/dist",
@@ -44,6 +44,12 @@
   "license": "MIT",
   "dependencies": {
     "babel-runtime": "6.x",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-iconfont": "^9.1.0",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-postcss": "^7.0.1",
+    "md5-file": "^3.2.3",
     "vue-lazyload": "^1.2.1"
   },
   "peerDependencies": {

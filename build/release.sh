@@ -15,9 +15,9 @@ then
   # build
   VERSION=$VERSION npm run dist
 
-  # publish vant-css
-  echo "Releasing vant-css $VERSION ..."
-  cd packages/vant-css
+  # publish dvant-css
+  echo "Releasing dvant-css $VERSION ..."
+  cd packages/dvant-css
   npm version $VERSION --message "[release] $VERSION"
   npm publish
   cd ../..
@@ -28,11 +28,11 @@ then
   npm version $VERSION --message "[release] $VERSION"
 
   # publish
-  git push origin master
-  git push origin refs/tags/v$VERSION
-  git checkout dev
-  git rebase master
-  git push origin dev
+  # git push origin master
+  # git push origin refs/tags/v$VERSION
+  # git checkout dev
+  # git rebase master
+  # git push origin dev
 
   npm publish
 fi

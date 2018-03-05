@@ -4,7 +4,7 @@
  * 1. 代码格式校验
  * 2. 构建 JS 入口文件
  * 3. 构建每个组件对应的 [component].js
- * 4. 构建 vant-css
+ * 4. 构建 dvant-css
  * 5. 打包 JS 文件：vant.js && vant.min.js
  * 6. 生成每个组件目录下的 style 入口
  */
@@ -27,15 +27,15 @@ log('Starting', 'build:component');
 exec('npm run build:components --silent');
 log('Finished', 'build:component');
 
-// 4. build vant-css
-log('Starting', 'build:vant-css');
-exec('npm run build:vant-css --silent');
-log('Finished', 'build:vant-css');
+// 4. build dvant-css
+log('Starting', 'build:dvant-css');
+exec('npm run build:dvant-css --silent');
+log('Finished', 'build:dvant-css');
 
-// 5. build vant.js
-log('Starting', 'build:vant');
-exec('npm run build:vant --silent');
-log('Finished', 'build:vant');
+// 5. build dvant.js
+log('Starting', 'build:dvant');
+exec('npm run build:dvant --silent');
+log('Finished', 'build:dvant');
 
 // 6. build style entrys
 log('Starting', 'build:style-entries');

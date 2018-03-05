@@ -2,6 +2,9 @@
   <div class="van-contact-list">
     <radio-group :value="value" @input="$emit('input', $event)">
       <cell-group>
+        <cell icon="add">
+          <h4>{{ title || $t('title') }}</h4>
+        </cell>
         <cell v-for="(item, index) in list" :key="item.id" is-link>
           <radio :name="item.id" @click="$emit('select', item, index)">
             <p class="van-contact-list__text">{{ $t('name') }}：{{ item.name }}</p>
@@ -39,6 +42,7 @@ export default create({
   },
 
   props: {
+    title: String,
     value: {},
     addText: String,
     list: {

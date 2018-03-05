@@ -4,11 +4,11 @@ const isMinify = process.argv.indexOf('-p') !== -1;
 
 module.exports = Object.assign({}, config, {
   entry: {
-    'vant': './packages/index.js'
+    'dvant': './packages/index.js'
   },
   output: {
     filename: isMinify ? './lib/[name].min.js' : './lib/[name].js',
-    library: 'vant',
+    library: 'dvant',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
