@@ -1,6 +1,6 @@
 {
   "name": "dvant-css",
-  "version": "0.12.31",
+  "version": "0.12.32",
   "description": "dvant css.",
   "main": "lib/index.css",
   "style": "lib/index.css",
