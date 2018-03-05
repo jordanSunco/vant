@@ -30,8 +30,8 @@ function compile(dir) {
   files.forEach(file => {
     const absolutePath = path.resolve(dir, file);
 
-    // 移除 vant-css
-    if (file.indexOf('vant-css') !== -1) {
+    // 移除 dvant-css
+    if (file.indexOf('dvant-css') !== -1) {
       fs.removeSync(absolutePath);
       // 遍历文件夹
     } else if (isDir(absolutePath)) {
