@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vant from 'packages';
-require('packages/vant-css/src/index.css');
+require('packages/dvant-css/src/index.css');
 
 Vue.use(Vant);
 
