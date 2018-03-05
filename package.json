@@ -12,11 +12,11 @@
     "types"
   ],
   "scripts": {
-    "bootstrap": "yarn || npm i && cd ./packages/vant-css/ && yarn || npm i && cd ../../",
+    "bootstrap": "yarn || npm i && cd ./packages/dvant-css/ && yarn || npm i && cd ../../",
     "dev": "npm run build:file && webpack-dev-server --inline --config build/webpack.config.dev.js --content-base ./",
     "build:file": "node build/bin/build-entry.js",
     "build:components": "node build/bin/build-components.js --color",
-    "build:dvant-css": "gulp build --gulpfile packages/vant-css/gulpfile.js --color",
+    "build:dvant-css": "gulp build --gulpfile packages/dvant-css/gulpfile.js --color",
     "build:dvant": "cross-env NODE_ENV=production webpack --progress --hide-modules --color --config build/webpack.build.js && cross-env NODE_ENV=production webpack -p --progress --hide-modules --color --config build/webpack.build.js",
     "build:style-entry": "cross-env VUE_ENV=server node build/bin/build-style-entry.js",
     "build:changelog": "sh build/bin/build-changelog.sh",
